@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Estimated Traffic Volume</title>
+    <style>
+        body {
+            background-image: url('https://assets.carpages.ca/prod-blog/uploads/2020/08/shutterstock_1531909190-scaled-e1598277201620-1320x1102.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            margin: 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            max-width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .value {
+            font-size: 2em;
+            color: #4CAF50;
+            margin: 20px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #2196F3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Predicted Traffic Volume</h1>
+        <div class="value">{{ prediction }}</div>
+        <p><a href="{{ url_for('home') }}">Go Back</a></p>
+    </div>
+</body>
+</html>
